@@ -53,3 +53,29 @@ nav a {
 .feature {
   width: 200px;
 }
+
+/* Layout for navigation */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Main grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+/* Float feature image */
+.feature {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+/* Photo grid inside aside */
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
