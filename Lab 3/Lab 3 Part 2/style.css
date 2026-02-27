@@ -27,3 +27,67 @@ footer {
 footer p {
   text-align: center;
 }
+body {
+  font-family: "Source Serif 4", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, nav a {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+a {
+  color: #7a3f3f;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #aa6666;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+ul, ol {
+  margin: 16px 0;
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #aa6666;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #7a3f3f;
+}
