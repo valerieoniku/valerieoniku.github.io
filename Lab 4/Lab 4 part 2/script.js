@@ -27,3 +27,19 @@ for (const image of images) {
     updateDisplayedImage(newImage);
   });
 }
+function updateDisplayedImage(img) {
+  displayedImage.src = img.src;
+  displayedImage.alt = img.alt;
+}
+
+btn.addEventListener("click", function () {
+  if (btn.classList.contains("dark")) {
+    btn.textContent = "Lighten";
+    overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+    btn.classList.remove("dark");
+  } else {
+    btn.textContent = "Darken";
+    overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
+    btn.classList.add("dark");
+  }
+});
