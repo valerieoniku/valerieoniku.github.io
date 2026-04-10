@@ -13,3 +13,17 @@ const images = [
 ];
 
 const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+
+for (const image of images) {
+  const newImage = document.createElement("img");
+
+  newImage.setAttribute("src", baseURL + image.filename);
+  newImage.setAttribute("alt", image.alt);
+  newImage.setAttribute("tabindex", "0");
+
+  thumbBar.appendChild(newImage);
+
+  newImage.addEventListener("click", function () {
+    updateDisplayedImage(newImage);
+  });
+}
