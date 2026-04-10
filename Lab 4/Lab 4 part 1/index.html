@@ -1,6 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
 <!--
 Name: Valerie Oniku
 File: index.html
 Date: 10th April 2026
 Description: A silly story generator project using JavaScript.
 -->
+
+<title>Silly Story Generator</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  width: 350px;
+}
+
+.story {
+  background: #ffc125;
+  padding: 10px;
+  visibility: hidden;
+}
+</style>
+
+</head>
+
+<body>
+
+<div>
+  <label for="custom-name">Enter custom name:</label>
+  <input id="custom-name" type="text">
+</div>
+
+<fieldset>
+  <legend>Choose locale:</legend>
+
+  <label for="us">US</label>
+  <input id="us" type="radio" name="uk-us" value="us" checked>
+
+  <label for="uk">UK</label>
+  <input id="uk" type="radio" name="uk-us" value="uk">
+</fieldset>
+
+<div>
+  <button class="generate">Generate random story</button>
+</div>
+
+<p class="story"></p>
+
+<script src="main.js"></script>
+
+</body>
+</html>
