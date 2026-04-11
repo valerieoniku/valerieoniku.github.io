@@ -13,6 +13,8 @@ h1 {
 canvas {
   display: block;
   background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 p {
   position: absolute;
