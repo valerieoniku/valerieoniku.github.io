@@ -130,6 +130,8 @@ while (balls.length < 25) {
 }
 para.textContent = "Ball count: " + count;
 
+const evil = new EvilCircle(width / 2, height / 2);
+
 function loop() {
   ctx.fillStyle = "rgb(0 0 0 / 25%)";
   ctx.fillRect(0, 0, width, height);
