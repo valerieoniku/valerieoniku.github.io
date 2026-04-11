@@ -21,14 +21,16 @@ class Shape {
     this.velY = velY;
   }
 }
-class Ball {
+class Ball extends Shape {
   constructor(x, y, velX, velY, color, size) {
+    super(x, y, velX, velY);
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
     this.color = color;
     this.size = size;
+    this.exists = true;
   }
 
   draw() {
